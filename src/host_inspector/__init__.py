@@ -368,7 +368,7 @@ def tool_inventory() -> dict:
         "node": ["--version"], "npm": ["--version"], "docker": ["--version"], "gcc": ["--version"],
         "make": ["--version"], "ssh": ["-V"], "sshd": ["-V"], "rg": ["--version"], "jq": ["--version"],
         "curl": ["--version"], "tmux": ["-V"], "htop": ["--version"], "nvidia-smi": ["--version"],
-        "nvcc": ["--version"], "google-chrome": ["--version"], "claude": ["--version"],
+        "nvcc": ["--version"],
     }
     env = os.environ | {"PATH": os.environ.get("PATH", "") + f":{Path.home()}/.local/bin"}
     out = {}
