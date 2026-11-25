@@ -6,6 +6,9 @@ It replaces "run this shell command for me" with a small set of typed, bounded, 
 
 Built on the `mcp` 2.x Python SDK and `psutil`. Python >= 3.12.
 
+I built this to give an assistant a safe, bounded view of my own machines instead of an open shell, and to run the
+same package on a second host over ssh. Background and decisions: [docs/FIELD-NOTES.md](docs/FIELD-NOTES.md).
+
 ## Tools
 
 | Tool | What it does | Access |
