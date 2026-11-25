@@ -1,0 +1,18 @@
+[project]
+name = "host-inspector-mcp"
+version = "0.1.0"
+description = "MCP server (stdio) with safe, mostly read-only Linux host inspection tools: processes, disks, network, systemd, logs, packages."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+dependencies = ["mcp[cli]>=2.3.0", "psutil>=7.2.2"]
+
+[project.scripts]
+host-inspector-mcp = "host_inspector:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
