@@ -50,7 +50,7 @@ and tested ([`tests/test_tools.py`](tests/test_tools.py)):
 
 ```sh
 pip install .
-claude mcp add host -- host-inspector-mcp           # or any MCP client: command = host-inspector-mcp, transport = stdio
+# register with your MCP client: command = host-inspector-mcp, transport = stdio
 HOST_INSPECTOR_NAME=build-box HOST_INSPECTOR_INSTRUCTIONS="CI runner, Debian 12" host-inspector-mcp
 ```
 
